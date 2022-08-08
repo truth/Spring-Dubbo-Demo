@@ -18,7 +18,6 @@ public class DubboConsumerBootstrap {
 
 
     @Reference(version = "1.0.0")
-
     private DemoService demoService;
 
     public static void main(String[] args) {
@@ -34,7 +33,7 @@ public class DubboConsumerBootstrap {
             String result2 = demoService.sayHello("wangzhenli"+n);
             logger.info(result2);
             try {
-                Thread.sleep(1000);
+                Thread.sleep(5);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
